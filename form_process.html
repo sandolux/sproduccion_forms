@@ -1,0 +1,44 @@
+<form id="processForm" name="processForm">
+    <input type="hidden" name="cod_process" id="cod_process" value="">
+
+    <div id="form-error-message" class="alert alert-danger" role="alert" style="display: none;"></div>
+
+    <div class="row g-3">
+        <div class="col-12">
+            <label for="txt_Process" class="form-label">Nombre del Proceso</label>
+            <input name="txt_Process" type="text" class="form-control" id="txt_Process">
+        </div>
+
+        <div class="col-md-6">
+            <label for="CbProceso" class="form-label">Proceso</label>
+            <select name="CbProceso" id="CbProceso" class="form-select">
+                <option value="">Seleccionar...</option>
+            </select>
+        </div>
+
+        <div class="col-md-6">
+            <label for="CbConexion" class="form-label">Conexión</label>
+            <select name="CbConexion" id="CbConexion" class="form-select">
+                <option value="">Seleccionar...</option>
+            </select>
+        </div>
+
+        <div class="col-12" id="parametroField">
+            <label for="txt_parametro" class="form-label">Parámetro</label>
+            <input name="txt_parametro" type="text" class="form-control" id="txt_parametro">
+        </div>
+
+        <div class="col-12" id="ipFields" style="display: none;">
+            <label class="form-label">Dirección IP</label>
+            <div class="input-group">
+                <input name="txt_ip1" type="text" class="form-control text-center" id="txt_ip1" maxlength="3">
+                <span class="input-group-text">.</span>
+                <input name="txt_ip2" type="text" class="form-control text-center" id="txt_ip2" maxlength="3">
+                <span class="input-group-text">.</span>
+                <input name="txt_ip3" type="text" class="form-control text-center" id="txt_ip3" maxlength="3">
+                <span class="input-group-text">.</span>
+                <input name="txt_ip4" type="text" class="form-control text-center" id="txt_ip4" maxlength="3">
+            </div>
+        </div>
+    </div>
+</form>
