@@ -1,0 +1,33 @@
+<form id="productListForm" name="productListForm">
+    
+    <div id="form-error-message" class="alert alert-danger d-none" role="alert"></div>
+
+    <div class="row g-3">
+        
+        <div class="col-md-6">
+            <label for="productConfig" class="form-label">Configuración</label>
+            <input 
+                type="text" 
+                class="form-control" 
+                id="" 
+                name=""
+                placeholder="Ingrese configuración"
+            >
+        </div>
+
+        
+        <div class="col-md-6">
+            <label for="processId" class="form-label">Proceso</label>
+            <select 
+                class="form-select" 
+                id="processId" 
+                name="processId"
+            >
+                <option value="">Seleccionar...</option>
+                <!-- Opciones cargadas desde backend -->
+                <option value="1">Proceso 1</option>
+                <option value="2">Proceso 2</option>
+            </select>
+        </div>
+    </div>
+</form>
